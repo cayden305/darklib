@@ -306,7 +306,7 @@ function Utility.new(className, properties)
 
         if not ok then
             warn(
-                "Failed to set",
+                "[aeroWare] Failed to set",
                 className,
                 property,
                 typeof(value),
@@ -2410,7 +2410,7 @@ function Section:AddSlider(options)
 		if isInputDragStart(input) then
 			dragging = true
 			Utility.tween(knobScale, "Pulse", { Scale = 1.35 })
-			Utility.tween(fill.UIStroke, "Fast", { Transparency = 0.4 })
+			--Utility.tween(fill.UIStroke, "Fast", { Transparency = 0.4 })
 			updateFromInput(input.Position)
 		end
 	end)
@@ -2425,7 +2425,7 @@ function Section:AddSlider(options)
 		if isInputDragEnd(input) then
 			dragging = false
 			Utility.tween(knobScale, "Pulse", { Scale = 1 })
-			Utility.tween(fill.UIStroke, "Fast", { Transparency = 0.7 })
+			--Utility.tween(fill.UIStroke, "Fast", { Transparency = 0.7 })
 		end
 	end)
 
