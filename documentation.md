@@ -5,7 +5,7 @@ Roblox UI library.
 ## Loading
 
 ```lua
-local source = (game :: any):HttpGet("RAW_GITHUB_URL/UILib.lua")
+local source = (game :: any):HttpGet("https://raw.githubusercontent.com/cayden305/darklib/refs/heads/main/UILib.lua")
 local UI = assert(loadstring(source))()
 ```
 
@@ -457,7 +457,7 @@ sparkles, mailbox, server, database, archive, inbox, cloud
 ## Complete example
 
 ```lua
-local source = (game :: any):HttpGet("RAW_GITHUB_URL/UILib.lua")
+local source = (game :: any):HttpGet("https://raw.githubusercontent.com/cayden305/darklib/refs/heads/main/UILib.lua")
 local UI = assert(loadstring(source))()
 
 UI:Init({
